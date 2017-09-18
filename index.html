@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        
+        <!-- Fontawesome -->
+        <script src="https://use.fontawesome.com/b76b9f71f7.js"></script>
+        
+        <title>FreeCodeCamp Show&amp;Tell</title>
+        
+        <style>
+            
+            @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+            
+            body {
+                font-family: Roboto, Helvetica, sans-serif;
+                font-weight: 300;
+                line-height: 1.2;
+                letter-spacing: 1px;
+            }
+            
+            .row {
+                height: 100vh;
+                min-height: 800px;
+            }
+            
+            .col-xl-4 {
+                background: url(images/background-purple.jpg) no-repeat center center fixed;
+                background-size: cover;
+                color: #fff;
+            }
+            
+            .col-xl-8 {
+                background: url(images/background-white.jpg) no-repeat center center fixed;
+                background-size: cover;
+                color: #424242;
+            }
+            
+            .profile {
+                width: 195px;
+            }
+            
+            .profile-logo {
+                border-radius: 50%;
+                box-shadow: 25px 0px 55px 0px rgba(0, 0, 0, 0.21);
+                top: 40px;
+                left: 72px;
+                height: 55px;
+                position: relative;
+                width: 55px;
+            }
+            
+            .profile-photo {
+                border-radius: 76px;
+                box-shadow: 25px 0px 55px 0px rgba(0, 0, 0, 0.21);
+                height: 189px;
+                width: 189px;
+            }
+            
+            .name {
+                font-size: 48px;
+            }
+            
+            .name-shrink {
+                font-size: 40px;
+            }
+            
+            .title {
+                color: #bbbad1;
+                font-size: 24px;
+                font-weight: 400;
+            }
+            
+            .title-shrink {
+                font-size: 18px;
+            }
+            
+            .languages {
+                height: 96px;
+            }
+            
+            .language-logo-small {
+                height: 46px;
+                margin-top: 20px;
+            }
+            
+            .blurb {
+                font-size: 22px;
+                font-weight: 300;
+            }
+            
+            .social {
+                font-size: 22px;
+                font-weight: 400;
+            }
+            
+            .social a {
+                color: #bbbad1;
+            }
+            
+            a:hover {
+                color: #fff;
+                text-decoration: none;
+            }
+            
+            .browser {
+                border-radius: 18px;
+                box-shadow: 25px 0px 55px 0px rgba(0, 0, 0, 0.21);
+            }
+            
+            .project {
+                border-radius: 6px;
+                box-shadow: 4px 0px 55px 0px rgba(0, 0, 0, 0.12);
+                width: 550px;
+            }
+            
+            .project-logo {
+                border-top-left-radius: 6px;
+                border-bottom-left-radius: 6px;
+            }
+            
+            .project-title {
+                font-size: 26px;
+                font-weight: 700;
+            }
+            
+            .project-link a {
+                font-size: 22px;
+                text-decoration: none;
+            }
+            
+            .project-link a:hover, .project-link a:active {
+                color: #424242;
+                text-decoration: none;
+            }
+            
+            .project-link-shrink a {
+                font-size: 18px;
+            }
+            
+            #slideshow {
+                position: relative; 
+                width: 100vw;
+                height: 100vh;
+                padding: 10px;
+            }
+
+            #slideshow > div { 
+                position: absolute; 
+                top: 0px; 
+                left: 0px; 
+                right: 0px; 
+                bottom: 0px; 
+            }
+            
+            @media screen and (max-width: 575px) { 
+                .browser {width: 400px; border-radius: 10px;}
+                .project {width: 400px;}
+                .project-title {font-size: 20px;}
+                .project-link a {font-size: 16px;}
+            }
+            
+            @media screen and (min-width: 576px) { 
+                .browser {width: 576px; border-radius: 17px;} }
+            
+            @media screen and (min-width: 800px) { 
+                .browser {width: 800px;} }
+            
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <div id="slideshow">
+            
+<!--Screen 1-->
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-4 d-flex flex-column justify-content-between text-center p-5">
+                    <div>
+                        <div class="profile mx-auto mb-3">
+                            <img class="profile-logo" src="images/logo-fcc-white.png" alt="freeCodeCamp logo">
+                            <img class="profile-photo" src="images/profile-peter-daily.jpeg" alt="Profile pic">
+                        </div>
+                        <div class="mb-4">
+                            <div class="name">Peter Daily</div>
+                            <div class="title">Frontend Developer</div>
+                        </div>
+                        <div class="languages mb-4">
+                            <img class="language-log" src="images/languages-html-css-js.png" alt="Logo for HTML, CSS, and JavaScript">
+                        </div>
+                        <div class="blurb mb-5">I started learning with FreeCodeCamp 2.5 years ago.</div>
+                    </div>
+                    <div class="social align-content-end">
+                        <a href="https://github.com/thepeted" target="_blank"><i class="fa fa-github fa-lg mr-2" aria-hidden="true"></i>thepeted</a>
+                    </div>
+                </div>
+                <div class="col-xl-8 text-center d-flex flex-column justify-content-around p-0 pb-4 pb-xl-0">
+                    <div>
+                        <img class="browser my-4 my-xl-0" src="images/browser-peter-daily-simon.jpg" alt="Browser window">
+                    </div>
+                    <div class="project d-flex flex-row mx-auto">
+                        <img class="project-logo" src="images/logo-fcc-green.png" alt="FreeCodeCamp logo">
+                        <div class="text-left p-4">
+                            <div class="project-title mb-2">Simon Game</div>
+                            <div class="project-link"><a href="https://codepen.io/thepeted/full/ojVYoO/" target="_blank">codepen.io/thepeted/</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+<!--Screen 2-->
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-4 d-flex flex-column justify-content-between text-center p-5">
+                    <div>
+                        <div class="profile mx-auto mb-3">
+                            <img class="profile-logo" src="images/logo-fcc-white.png" alt="freeCodeCamp logo">
+                            <img class="profile-photo" src="images/profile-peter-daily.jpeg" alt="Profile pic">
+                        </div>
+                        <div class="mb-4">
+                            <div class="name">Peter Daily</div>
+                            <div class="title">Frontend Developer</div>
+                        </div>
+                        <div class="languages mb-4">
+                            <img class="language-log" src="images/languages-html-css-js.png" alt="Logo for HTML, CSS, and JavaScript">
+                        </div>
+                        <div class="blurb mb-5">I started learning with FreeCodeCamp 2.5 years ago.</div>
+                    </div>
+                    <div class="social align-content-end">
+                        <a href="https://github.com/thepeted" target="_blank"><i class="fa fa-github fa-lg mr-2" aria-hidden="true"></i>thepeted</a>
+                    </div>
+                </div>
+                <div class="col-xl-8 text-center d-flex flex-column justify-content-around p-0 pb-4 pb-xl-0">
+                    <div>
+                        <img class="browser my-4 my-xl-0" src="images/browser-peter-daily-heatmap.jpg" alt="Browser window">
+                    </div>
+                    <div class="project d-flex flex-row mx-auto">
+                        <img class="project-logo" src="images/logo-fcc-green.png" alt="FreeCodeCamp logo">
+                        <div class="text-left p-4">
+                            <div class="project-title mb-2">D3 Heatmap</div>
+                            <div class="project-link"><a href="https://codepen.io/thepeted/full/ONeeQG/?fref=gc&dti=425283784317736" target="_blank">codepen.io/thepeted/</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+<!--Screen 3-->
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-4 d-flex flex-column justify-content-between text-center p-5">
+                    <div>
+                        <div class="profile mx-auto mb-3">
+                            <img class="profile-logo" src="images/logo-fcc-white.png" alt="freeCodeCamp logo">
+                            <img class="profile-photo" src="images/profile-kevin-nolan.png" alt="Profile pic">
+                        </div>
+                        <div class="mb-4">
+                            <div class="name">Kevin Nolan</div>
+                            <div class="title">Web Developer</div>
+                        </div>
+                        <div class="languages mb-4">
+                            <img class="language-log" src="images/languages-html-css-js.png" alt="Logo for HTML, CSS, and JavaScript">
+                        </div>
+                        <div class="blurb mb-5">I used Free Code Camp to learn enough to get a job as a web developer in Bury.</div>
+                    </div>
+                    <div class="social align-content-end">
+                        <a href="https://github.com/betaalpha987" target="_blank"><i class="fa fa-github fa-lg mr-2" aria-hidden="true"></i>betaalpha987</a>
+                    </div>
+                </div>
+                <div class="col-xl-8 text-center d-flex flex-column justify-content-around p-0 pb-4 pb-xl-0">
+                    <div>
+                        <img class="browser my-4 my-xl-0" src="images/browser-kevin-nolan-pizza.jpg" alt="Browser window">
+                    </div>
+                    <div class="project d-flex flex-row mx-auto">
+                        <img class="project-logo" src="images/logo-fcc-green.png" alt="FreeCodeCamp logo">
+                        <div class="text-left p-4">
+                            <div class="project-title mb-2">Pizza Playground</div>
+                            <div class="project-link"><a href="http://pizza987.herokuapp.com/" target="_blank">pizza987.herokuapp.com/</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+
+<!--Screen 4-->
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-4 d-flex flex-column justify-content-between text-center p-5">
+                    <div>
+                        <div class="profile mx-auto mb-3">
+                            <img class="profile-logo" src="images/logo-fcc-white.png" alt="freeCodeCamp logo">
+                            <img class="profile-photo" src="images/profile-fey-agape.jpg" alt="Profile pic">
+                        </div>
+                        <div class="mb-4">
+                            <div class="name">Fey Agape</div>
+                            <div class="title">Junior Software Developer</div>
+                        </div>
+                        <div class="languages mb-4">
+                            <img class="language-logo-small" src="images/languages-html-css-js.png" alt="Logo for HTML, CSS, and JavaScript">
+                            <img class="language-logo-small mx-1" src="images/languages-python.png" alt="Logo for python">
+                            <img class="language-logo-small mx-1" src="images/languages-java.png" alt="Logo for java">
+                            <img class="language-logo-small mx-1" src="images/languages-xml.png" alt="Logo for xml">
+                        </div>
+                        <div class="blurb mb-5">I studied through FreeCodeCamp, W3Schools, and CodeAcademy.</div>
+                    </div>
+                    <div class="social align-content-end">
+                        <a href="https://github.com/feyagape" target="_blank"><i class="fa fa-github fa-lg mr-2" aria-hidden="true"></i>FeyAgape</a>
+                    </div>
+                </div>
+                <div class="col-xl-8 text-center d-flex flex-column justify-content-around p-0 pb-4 pb-xl-0">
+                    <div>
+                        <img class="browser my-4 my-xl-0" src="images/browser-fey-agape-tribute.jpg" alt="Browser window">
+                    </div>
+                    <div class="project d-flex flex-row mx-auto">
+                        <img class="project-logo" src="images/logo-fcc-green.png" alt="FreeCodeCamp logo">
+                        <div class="text-left p-4">
+                            <div class="project-title mb-2">Tribute Page</div>
+                            <div class="project-link"><a href="https://codepen.io/FeyAgape/full/KvxNyB/" target="_blank">codepen.io/FeyAgape/</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<!--Screen 5-->
+            
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-4 d-flex flex-column justify-content-between text-center p-5">
+                    <div>
+                        <div class="profile mx-auto mb-3">
+                            <img class="profile-logo" src="images/logo-fcc-white.png" alt="freeCodeCamp logo">
+                            <img class="profile-photo" src="images/profile-generic.png" alt="Profile pic">
+                        </div>
+                        <div class="mb-4">
+                            <div class="name">Jahangir Shah</div>
+                            <div class="title">FreeCodeCamper</div>
+                        </div>
+                        <div class="languages mb-4">
+                            <img class="language-logo-small" src="images/languages-html-css-js.png" alt="Logo for HTML, CSS, and JavaScript">
+                            <img class="language-logo-small mx-1" src="images/languages-php.png" alt="Logo for python">
+                            <img class="language-logo-small mx-1" src="images/languages-mysql.png" alt="Logo for java">
+                        </div>
+                        <div class="blurb mb-5">I’ve been learning through FreeCodeCamp for around one year.</div>
+                    </div>
+                    <div class="social align-content-end">
+                        <a href="https://github.com/janshah" target="_blank"><i class="fa fa-github fa-lg mr-2" aria-hidden="true"></i>janshah</a>
+                    </div>
+                </div>
+                <div class="col-xl-8 text-center d-flex flex-column justify-content-around p-0 pb-4 pb-xl-0">
+                    <div>
+                        <img class="browser my-4 my-xl-0" src="images/browser-jahangir-shah-dungeon.jpg" alt="Browser window">
+                    </div>
+                    <div class="project d-flex flex-row mx-auto">
+                        <img class="project-logo" src="images/logo-fcc-green.png" alt="FreeCodeCamp logo">
+                        <div class="text-left p-4">
+                            <div class="project-title mb-2">Dungeon Crawler Game</div>
+                            <div class="project-link"><a href="http://rogue.physify.com/" target="_blank">rogue.physify.com</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+<!--Screen 6-->
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-4 d-flex flex-column justify-content-between text-center p-5">
+                    <div>
+                        <div class="profile mx-auto mb-3">
+                            <img class="profile-logo" src="images/logo-fcc-white.png" alt="freeCodeCamp logo">
+                            <img class="profile-photo" src="images/profile-generic.png" alt="Profile pic">
+                        </div>
+                        <div class="mb-4">
+                            <div class="name">Wayne Williamson</div>
+                            <div class="title">FreeCodeCamper</div>
+                        </div>
+                        <div class="languages mb-4">
+                            <img class="language-log" src="images/languages-html-css-js.png" alt="Logo for HTML, CSS, and JavaScript">
+                        </div>
+                        <div class="blurb mb-5">I’ve been learning with FreeCodeCamp since March 2017. I've also been learning from various online forums.</div>
+                    </div>
+                    <div class="social align-content-end">
+                        <a href="https://github.com/hedgehog1982" target="_blank"><i class="fa fa-github fa-lg mr-2" aria-hidden="true"></i>hedgehog1982</a>
+                    </div>
+                </div>
+                <div class="col-xl-8 text-center d-flex flex-column justify-content-around p-0 pb-4 pb-xl-0">
+                    <div>
+                        <img class="browser my-4 my-xl-0" src="images/browser-wayne-williamson-weather.jpg" alt="Browser window">
+                    </div>
+                    <div class="project d-flex flex-row mx-auto">
+                        <img class="project-logo" src="images/logo-fcc-green.png" alt="FreeCodeCamp logo">
+                        <div class="text-left p-4">
+                            <div class="project-title mb-2">Weather App</div>
+                            <div class="project-link"><a href="https://codepen.io/hedgehog1982/full/RVLPoV/" target="_blank">codepen.io/hedgehog1982/</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--Screen 7-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-4 d-flex flex-column justify-content-between text-center p-5">
+                    <div>
+                        <div class="profile mx-auto mb-3">
+                            <img class="profile-logo" src="images/logo-fcc-white.png" alt="freeCodeCamp logo">
+                            <img class="profile-photo" src="images/profile-tania-delongchamp.jpg" alt="Profile pic">
+                        </div>
+                        <div class="mb-4">
+                            <div class="name name-shrink">Tania Delongchamp</div>
+                            <div class="title">FreeCodeCamper</div>
+                        </div>
+                        <div class="languages mb-4">
+                            <img class="language-log" src="images/languages-html-css-js.png" alt="Logo for HTML, CSS, and JavaScript">
+                        </div>
+                        <div class="blurb mb-5">I’ve been working on my front end dev certificate with FreeCodeCamp for 4 months.</div>
+                    </div>
+                    <div class="social align-content-end">
+                        <a href="https://github.com/livelytania" target="_blank"><i class="fa fa-github fa-lg mr-2" aria-hidden="true"></i>livelytania</a>
+                    </div>
+                </div>
+                <div class="col-xl-8 text-center d-flex flex-column justify-content-around p-0 pb-4 pb-xl-0">
+                    <div>
+                        <img class="browser my-4 my-xl-0" src="images/browser-tania-delongchamp-wikipedia.jpg" alt="Browser window">
+                    </div>
+                    <div class="project d-flex flex-row mx-auto">
+                        <img class="project-logo" src="images/logo-fcc-green.png" alt="FreeCodeCamp logo">
+                        <div class="text-left p-4">
+                            <div class="project-title mb-2">Wikipedia Viewer</div>
+                            <div class="project-link project-link-shrink"><a href="https://livelytania.github.io/wikipedia-viewer/" target="_blank">livelytania.github.io/wikipedia-viewer/</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<!--Screen 8-->
+            
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-4 d-flex flex-column justify-content-between text-center p-5">
+                    <div>
+                        <div class="profile mx-auto mb-3">
+                            <img class="profile-logo" src="images/logo-fcc-white.png" alt="freeCodeCamp logo">
+                            <img class="profile-photo" src="images/profile-tania-delongchamp.jpg" alt="Profile pic">
+                        </div>
+                        <div class="mb-4">
+                            <div class="name name-shrink">Tania Delongchamp</div>
+                            <div class="title">FreeCodeCamper</div>
+                        </div>
+                        <div class="languages mb-4">
+                            <img class="language-log" src="images/languages-html-css-js.png" alt="Logo for HTML, CSS, and JavaScript">
+                        </div>
+                        <div class="blurb mb-5">I’ve been working on my front end dev certificate with FreeCodeCamp for 4 months.</div>
+                    </div>
+                    <div class="social align-content-end">
+                        <a href="https://github.com/livelytania" target="_blank"><i class="fa fa-github fa-lg mr-2" aria-hidden="true"></i>livelytania</a>
+                    </div>
+                </div>
+                <div class="col-xl-8 text-center d-flex flex-column justify-content-around p-0 pb-4 pb-xl-0">
+                    <div>
+                        <img class="browser my-4 my-xl-0" src="images/browser-tania-delongchamp-portfolio.jpg" alt="Browser window">
+                    </div>
+                    <div class="project d-flex flex-row mx-auto">
+                        <img class="project-logo" src="images/logo-fcc-green.png" alt="FreeCodeCamp logo">
+                        <div class="text-left p-4">
+                            <div class="project-title mb-2">Wikipedia Viewer</div>
+                            <div class="project-link project-link-shrink"><a href="https://livelytania.github.io/" target="_blank">livelytania.github.io/</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+<!--Screen 9-->
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-4 d-flex flex-column justify-content-between text-center p-5">
+                    <div>
+                        <div class="profile mx-auto mb-3">
+                            <img class="profile-logo" src="images/logo-fcc-white.png" alt="freeCodeCamp logo">
+                            <img class="profile-photo" src="images/profile-adam-collier.jpg" alt="Profile pic">
+                        </div>
+                        <div class="mb-4">
+                            <div class="name">Adam Collier</div>
+                            <div class="title">FreeCodeCamper</div>
+                        </div>
+                        <div class="languages mb-4">
+                            <img class="language-log" src="images/languages-html-css-js.png" alt="Logo for HTML, CSS, and JavaScript">
+                        </div>
+                        <div class="blurb mb-5">I’ve been learning through FreeCodeCamp for about 1 year.</div>
+                    </div>
+                    <div class="social align-content-end">
+                        <a href="https://github.com/adam-collier" target="_blank"><i class="fa fa-github fa-lg mr-2" aria-hidden="true"></i>Adam-Collier</a>
+                    </div>
+                </div>
+                <div class="col-xl-8 text-center d-flex flex-column justify-content-around p-0 pb-4 pb-xl-0">
+                    <div>
+                        <img class="browser my-4 my-xl-0" src="images/browser-adam-collier-google.jpg" alt="Browser window">
+                    </div>
+                    <div class="project d-flex flex-row mx-auto">
+                        <img class="project-logo" src="images/logo-fcc-green.png" alt="FreeCodeCamp logo">
+                        <div class="text-left p-4">
+                            <div class="project-title mb-2">Google Type</div>
+                            <div class="project-link"><a href="https://adam-collier.github.io/Google-Type/" target="_blank">adam-collier.github.io/Google-Type/</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+<!--Screen 10-->
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-4 d-flex flex-column justify-content-between text-center p-5">
+                    <div>
+                        <div class="profile mx-auto mb-3">
+                            <img class="profile-logo" src="images/logo-fcc-white.png" alt="freeCodeCamp logo">
+                            <img class="profile-photo" src="images/profile-sophie-ashcroft.jpg" alt="Profile pic">
+                        </div>
+                        <div class="mb-4">
+                            <div class="name">Sophie Ashcroft</div>
+                            <div class="title title-shrink">Founder/Teacher @fullstackofpancakes</div>
+                        </div>
+                        <div class="languages mb-4">
+                            <img class="language-logo-small" src="images/languages-html-css-js.png" alt="Logo for HTML, CSS, and JavaScript">
+                            <img class="language-logo-small mx-1" src="images/languages-python.png" alt="Logo for python">
+                            <img class="language-logo-small mx-1" src="images/languages-java.png" alt="Logo for java">
+                            <img class="language-logo-small mx-1" src="images/languages-xml.png" alt="Logo for xml">
+                        </div>
+                        <div class="blurb mb-5">I've studied with North Coders Ignite JS, Rails Girls 2016, IBM Coding Cognitive, Code Academy, Free Code Camp, and Code School online for 1.5 yrs.</div>
+                    </div>
+                    <div class="social align-content-end">
+                        <a href="https://github.com/mssososophie" target="_blank"><i class="fa fa-github fa-lg mr-2" aria-hidden="true"></i>mssososophie</a>
+                    </div>
+                </div>
+                <div class="col-xl-8 text-center d-flex flex-column justify-content-around p-0 pb-4 pb-xl-0">
+                    <div>
+                        <img class="browser my-4 my-xl-0" src="images/browser-sophie-ashcroft-portfolio.jpg" alt="Browser window">
+                    </div>
+                    <div class="project d-flex flex-row mx-auto">
+                        <img class="project-logo" src="images/logo-fcc-green.png" alt="FreeCodeCamp logo">
+                        <div class="text-left p-4">
+                            <div class="project-title mb-2">Tribute Page / Portfolio</div>
+                            <div class="project-link"><a href="https://codepen.io/mssososophie/full/XgjBpg/" target="_blank">codepen.io/mssososophie/</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+<!--Screen 11-->
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-4 d-flex flex-column justify-content-between text-center p-5">
+                    <div>
+                        <div class="profile mx-auto mb-3">
+                            <img class="profile-logo" src="images/logo-fcc-white.png" alt="freeCodeCamp logo">
+                            <img class="profile-photo" src="images/profile-anthony-tran.jpg" alt="Profile pic">
+                        </div>
+                        <div class="mb-4">
+                            <div class="name">Anthony Tran</div>
+                            <div class="title">FreeCodeCamper</div>
+                        </div>
+                        <div class="languages mb-4">
+                            <img class="language-log" src="images/languages-html-css-js.png" alt="Logo for HTML, CSS, and JavaScript">
+                        </div>
+                        <div class="blurb mb-5">I’ve been learning JavaScript for 6 months now through FreeCodeCamp.</div>
+                    </div>
+                    <div class="social align-content-end">
+                        <a href="https://github.com/anthonytrandev" target="_blank"><i class="fa fa-github fa-lg mr-2" aria-hidden="true"></i>anthonytranDev</a>
+                    </div>
+                </div>
+                <div class="col-xl-8 text-center d-flex flex-column justify-content-around p-0 pb-4 pb-xl-0">
+                    <div>
+                        <img class="browser my-4 my-xl-0" src="images/browser-anthoney-tran-jscalculator.jpg" alt="Browser window">
+                    </div>
+                    <div class="project d-flex flex-row mx-auto">
+                        <img class="project-logo" src="images/logo-fcc-green.png" alt="FreeCodeCamp logo">
+                        <div class="text-left p-4">
+                            <div class="project-title mb-2">JavaScript Calculator</div>
+                            <div class="project-link project-link-shrink"><a href="https://github.com/anthonytranDev/JavaScript_Calculator" target="_blank">github.com/anthonytranDev/</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <script type="text/javascript">
+            
+            $( document ).ready(function() {
+            
+                $("#slideshow > div:gt(0)").hide();
+
+                setInterval(function() { 
+                  $('#slideshow > div:first')
+                    .fadeOut(1000)
+                    .next()
+                    .fadeIn(1000)
+                    .end()
+                    .appendTo('#slideshow');
+                },  3000);
+                
+            });
+            
+        </script>
+        
+    </body>
+</html>
